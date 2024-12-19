@@ -1,17 +1,17 @@
 
 
 // MongoDB Config
-export const MONGODB_CONNECTION = "mongodb+srv://chorompagla:Smwalidkh93@cluster0.hs5ydre.mongodb.net/EcomProject?retryWrites=true&w=majority&appName=Cluster0";
+export const MONGODB_CONNECTION = "mongodb+srv://chorompagla:Smwalidkh93@cluster0.hs5ydre.mongodb.net/assignment21?retryWrites=true&w=majority&appName=Cluster0";
 
 // jwt Config
 export const JWT_SECRET = "c52bc16445487ab27af9274c09de93b55c05fef67b366ffd232aa157888a37a5";
 export const JWT_EXPIRATION_TIME = 60 * 60 * 24 * 30;
 
 // email config
-export const EMAIL_HOST = "";
-export const EMAIL_PORT = "";
-export const EMAIL_USER = "";
-export const EMAIL_PASSWORD = "";
+export const EMAIL_HOST = "smtp.gmail.com";
+export const EMAIL_PORT = 587;
+export const EMAIL_USER = "chorompagla@gmail.com";
+export const EMAIL_PASSWORD = "bsodvosaegezletj";
 
 // security (json & url)
 export const MAX_JSON_SIZE = "50mb";

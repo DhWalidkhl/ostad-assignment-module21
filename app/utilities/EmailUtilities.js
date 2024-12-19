@@ -1,12 +1,13 @@
 import nodemailer from 'nodemailer';
+import {EMAIL_HOST, EMAIL_PASSWORD, EMAIL_PORT, EMAIL_USER} from "../config/Config.js";
 
 const EmailSend=async (EmailTo,EmailText,EmailSubject)=>{
 
     let  transport= nodemailer.createTransport({
-        host:"smtp.gmail.com",
-        port:587,
+        host:EMAIL_HOST,
+        port:EMAIL_PORT,
         secure:false,
-        auth:{user:"chorompagla@gmail.com",pass:"bsodvosaegezletj"},
+        auth:{user:EMAIL_USER,pass:EMAIL_PASSWORD},
         tls:{rejectUnauthorized:false}
     })
 

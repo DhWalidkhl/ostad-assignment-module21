@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "9038d2d8-0e83-45fb-a470-2888dabbadaf",
+		"name": "assignment21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33399110"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\": \"sm.walid69@yahoo.com\",\r\n        \"password\": \"1234\",\r\n        \"firstName\": \"DH\",\r\n        \"lastName\": \"Walid\",\r\n        \"NIDNumber\": 6426230808,\r\n        \"phoneNumber\": \"01700950650\",\r\n        \"bloodGroup\": \"A+\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASEURL}}/registration",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\": \"sm.walid69@yahoo.com\",\r\n        \"password\": \"1234\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASEURL}}/login",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\": \"sm.walid69@yahoo.com\",\r\n        \"password\": \"1234\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASEURL}}/alluser",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"alluser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"email\": \"sm.walid69@yahoo.com\",\r\n        \"password\": \"1234\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASEURL}}/singleUserProfile",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"singleUserProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "singleProfileUpdate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \r\n       \r\n            \"firstName\": \"DHKHL\",\r\n            \"lastName\": \"Walid\",\r\n            \"NIDNumber\": 6426230808,\r\n            \"phoneNumber\": \"01700950650\",\r\n            \"bloodGroup\": \"A+\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASEURL}}/singleUserProfileUpdate",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"singleUserProfileUpdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASEURL}}/deleteSingleUser/676420779977bd496e207b1e",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"deleteSingleUser",
+						"676420779977bd496e207b1e"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASEURL",
+			"value": "http://localhost:6000/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNtLndhbGlkNjlAeWFob28uY29tIiwidXNlcl9pZCI6IjY3NjQxYzYzNWE4ZWZmYWFmNGE4YWM4YiIsImlhdCI6MTczNDYxNTAyOSwiZXhwIjoxNzM3MjA3MDI5fQ.KpglAIw6sJIz45yUU5iFZ1fUCBBjMpp27FJxFmD_snw",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}

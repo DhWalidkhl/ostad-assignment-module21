@@ -9,6 +9,10 @@ const UserModel = new mongoose.Schema(
         NIDNumber: { type: Number, required: true },
         phoneNumber: { type: String, required: true },
         bloodGroup: { type: String, required: true }
+    },
+    {
+            timestamps: true,
+            versionKey: false
     }
 )
 
